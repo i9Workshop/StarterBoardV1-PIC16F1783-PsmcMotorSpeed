@@ -1,1 +1,5 @@
-# StarterBoardV1-PIC16F1783-PsmcMotorSpeed
+##  PSMC Module - Single PWM Complementary Output
+
+Control a DC brush motor.
+
+<br/>
