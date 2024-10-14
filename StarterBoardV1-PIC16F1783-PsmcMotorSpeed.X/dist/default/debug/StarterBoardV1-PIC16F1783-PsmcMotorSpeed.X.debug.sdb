@@ -1,0 +1,458 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1783 ]
+[d frameptr 6 ]
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\labs.c
+[v _labs labs `(l  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\memset.c
+[v _memset memset `(*.4v  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"26 C:\Microchip\Projects-GitHub\StarterBoardV1\StarterBoardV1-PIC16F1783-PsmcMotorSpeed.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"5 C:\Microchip\Projects-GitHub\StarterBoardV1\StarterBoardV1-PIC16F1783-PsmcMotorSpeed.X\program.c
+[v _delay_x1o5us delay_x1o5us `(v  1 e 1 0 ]
+"10
+[v _delay_x24o25us delay_x24o25us `(v  1 e 1 0 ]
+"15
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"20
+[v _programInitialize programInitialize `(v  1 e 1 0 ]
+"71
+[v _programLoop programLoop `(v  1 e 1 0 ]
+"163
+[v _pb_DelayDebounce pb_DelayDebounce `(v  1 e 1 0 ]
+"167
+[v _lcd_DelaySetupTime lcd_DelaySetupTime `(v  1 e 1 0 ]
+"172
+[v _lcd_DelayPulse lcd_DelayPulse `(v  1 e 1 0 ]
+"177
+[v _lcd_EPulse lcd_EPulse `(v  1 e 1 0 ]
+"185
+[v _lcd_WriteData lcd_WriteData `(v  1 e 1 0 ]
+"206
+[v _lcd_PrintCmd lcd_PrintCmd `(v  1 e 1 0 ]
+"213
+[v _lcd_Initialize lcd_Initialize `(v  1 e 1 0 ]
+"238
+[v _lcd_Goto lcd_Goto `(v  1 e 1 0 ]
+"254
+[v _lcd_PrintChar lcd_PrintChar `(v  1 e 1 0 ]
+"261
+[v _lcd_PrintString lcd_PrintString `(v  1 e 1 0 ]
+"301
+[v _lcd_PrintDigitInt32 lcd_PrintDigitInt32 `(v  1 e 1 0 ]
+"341
+[v _motor_Initialize motor_Initialize `(v  1 e 1 0 ]
+"370
+[v _motor_SetSpeed motor_SetSpeed `(v  1 e 1 0 ]
+[s S254 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"449 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8\pic\include\proc\pic16f1783.h
+[s S263 . 1 `uc 1 PORTA 1 0 :8:0 
+]
+[u S265 . 1 `S254 1 . 1 0 `S263 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES265  1 e 1 @12 ]
+[s S170 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"1158
+[s S179 . 1 `uc 1 TRISA 1 0 :8:0 
+]
+[u S181 . 1 `S170 1 . 1 0 `S179 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES181  1 e 1 @140 ]
+[s S44 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1228
+[s S53 . 1 `uc 1 TRISB 1 0 :8:0 
+]
+[u S55 . 1 `S44 1 . 1 0 `S53 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES55  1 e 1 @141 ]
+[s S96 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1298
+[s S105 . 1 `uc 1 TRISC 1 0 :8:0 
+]
+[u S107 . 1 `S96 1 . 1 0 `S105 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES107  1 e 1 @142 ]
+[s S70 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2298
+[s S79 . 1 `uc 1 LATB 1 0 :8:0 
+]
+[u S81 . 1 `S70 1 . 1 0 `S79 1 . 1 0 ]
+[v _LATBbits LATBbits `VES81  1 e 1 @269 ]
+[s S144 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2368
+[s S153 . 1 `uc 1 LATC 1 0 :8:0 
+]
+[u S155 . 1 `S144 1 . 1 0 `S153 1 . 1 0 ]
+[v _LATCbits LATCbits `VES155  1 e 1 @270 ]
+[s S196 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 ANSA3 1 0 :1:3 
+`uc 1 ANSA4 1 0 :1:4 
+`uc 1 ANSA5 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ANSA7 1 0 :1:7 
+]
+"3246
+[s S205 . 1 `uc 1 ANSELA 1 0 :8:0 
+]
+[u S207 . 1 `S196 1 . 1 0 `S205 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES207  1 e 1 @396 ]
+[s S122 . 1 `uc 1 ANSB0 1 0 :1:0 
+`uc 1 ANSB1 1 0 :1:1 
+`uc 1 ANSB2 1 0 :1:2 
+`uc 1 ANSB3 1 0 :1:3 
+`uc 1 ANSB4 1 0 :1:4 
+`uc 1 ANSB5 1 0 :1:5 
+]
+"3309
+[s S129 . 1 `uc 1 ANSELB 1 0 :6:0 
+]
+[u S131 . 1 `S122 1 . 1 0 `S129 1 . 1 0 ]
+[v _ANSELBbits ANSELBbits `VES131  1 e 1 @397 ]
+[s S296 . 1 `uc 1 P1MODE 1 0 :4:0 
+`uc 1 P1DBRE 1 0 :1:4 
+`uc 1 P1DBFE 1 0 :1:5 
+`uc 1 PSMC1LD 1 0 :1:6 
+`uc 1 PSMC1EN 1 0 :1:7 
+]
+"7105
+[s S302 . 1 `uc 1 P1MODE0 1 0 :1:0 
+`uc 1 P1MODE1 1 0 :1:1 
+`uc 1 P1MODE2 1 0 :1:2 
+`uc 1 P1MODE3 1 0 :1:3 
+]
+[u S307 . 1 `S296 1 . 1 0 `S302 1 . 1 0 ]
+[v _PSMC1CONbits PSMC1CONbits `VES307  1 e 1 @2065 ]
+[s S322 . 1 `uc 1 P1CSRC0 1 0 :1:0 
+`uc 1 P1CSRC1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 P1CPRE0 1 0 :1:4 
+`uc 1 P1CPRE1 1 0 :1:5 
+]
+"7265
+[s S328 . 1 `uc 1 P1CSRC 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 P1CPRE 1 0 :2:4 
+]
+[u S332 . 1 `S322 1 . 1 0 `S328 1 . 1 0 ]
+[v _PSMC1CLKbits PSMC1CLKbits `VES332  1 e 1 @2068 ]
+[s S346 . 1 `uc 1 P1OEA 1 0 :1:0 
+`uc 1 P1OEB 1 0 :1:1 
+`uc 1 P1OEC 1 0 :1:2 
+`uc 1 P1OED 1 0 :1:3 
+`uc 1 P1OEE 1 0 :1:4 
+`uc 1 P1OEF 1 0 :1:5 
+]
+"7315
+[u S353 . 1 `S346 1 . 1 0 ]
+[v _PSMC1OENbits PSMC1OENbits `VES353  1 e 1 @2069 ]
+[s S363 . 1 `uc 1 P1POLA 1 0 :1:0 
+`uc 1 P1POLB 1 0 :1:1 
+`uc 1 P1POLC 1 0 :1:2 
+`uc 1 P1POLD 1 0 :1:3 
+`uc 1 P1POLE 1 0 :1:4 
+`uc 1 P1POLF 1 0 :1:5 
+`uc 1 P1INPOL 1 0 :1:6 
+]
+"7366
+[u S371 . 1 `S363 1 . 1 0 ]
+[v _PSMC1POLbits PSMC1POLbits `VES371  1 e 1 @2070 ]
+[s S382 . 1 `uc 1 P1PHST 1 0 :1:0 
+`uc 1 P1PHSC1 1 0 :1:1 
+`uc 1 P1PHSC2 1 0 :1:2 
+`uc 1 P1PHSC3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 P1PHSIN 1 0 :1:7 
+]
+"7555
+[u S389 . 1 `S382 1 . 1 0 ]
+[v _PSMC1PHSbits PSMC1PHSbits `VES389  1 e 1 @2074 ]
+[s S399 . 1 `uc 1 P1DCST 1 0 :1:0 
+`uc 1 P1DCSC1 1 0 :1:1 
+`uc 1 P1DCSC2 1 0 :1:2 
+`uc 1 P1DCSC3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 P1DCSIN 1 0 :1:7 
+]
+"7600
+[u S406 . 1 `S399 1 . 1 0 ]
+[v _PSMC1DCSbits PSMC1DCSbits `VES406  1 e 1 @2075 ]
+[s S416 . 1 `uc 1 P1PRST 1 0 :1:0 
+`uc 1 P1PRSC1 1 0 :1:1 
+`uc 1 P1PRSC2 1 0 :1:2 
+`uc 1 P1PRSC3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 P1PRSIN 1 0 :1:7 
+]
+"7645
+[u S423 . 1 `S416 1 . 1 0 ]
+[v _PSMC1PRSbits PSMC1PRSbits `VES423  1 e 1 @2076 ]
+"7873
+[v _PSMC1PHL PSMC1PHL `VEuc  1 e 1 @2081 ]
+"7935
+[v _PSMC1PHH PSMC1PHH `VEuc  1 e 1 @2082 ]
+"8004
+[v _PSMC1DCL PSMC1DCL `VEuc  1 e 1 @2083 ]
+"8066
+[v _PSMC1DCH PSMC1DCH `VEuc  1 e 1 @2084 ]
+"8135
+[v _PSMC1PRL PSMC1PRL `VEuc  1 e 1 @2085 ]
+"8197
+[v _PSMC1PRH PSMC1PRH `VEuc  1 e 1 @2086 ]
+[s S433 . 1 `uc 1 P1STRA 1 0 :1:0 
+`uc 1 P1STRB 1 0 :1:1 
+`uc 1 P1STRC 1 0 :1:2 
+`uc 1 P1STRD 1 0 :1:3 
+`uc 1 P1STRE 1 0 :1:4 
+`uc 1 P1STRF 1 0 :1:5 
+]
+"8691
+[u S440 . 1 `S433 1 . 1 0 ]
+[v _PSMC1STR0bits PSMC1STR0bits `VES440  1 e 1 @2094 ]
+"26 C:\Microchip\Projects-GitHub\StarterBoardV1\StarterBoardV1-PIC16F1783-PsmcMotorSpeed.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"35
+} 0
+"71 C:\Microchip\Projects-GitHub\StarterBoardV1\StarterBoardV1-PIC16F1783-PsmcMotorSpeed.X\program.c
+[v _programLoop programLoop `(v  1 e 1 0 ]
+{
+"72
+[v programLoop@motorSpeed motorSpeed `ul  1 a 4 45 ]
+"159
+} 0
+"163
+[v _pb_DelayDebounce pb_DelayDebounce `(v  1 e 1 0 ]
+{
+"165
+} 0
+"370
+[v _motor_SetSpeed motor_SetSpeed `(v  1 e 1 0 ]
+{
+[v motor_SetSpeed@pwm pwm `us  1 p 2 0 ]
+"376
+} 0
+"301
+[v _lcd_PrintDigitInt32 lcd_PrintDigitInt32 `(v  1 e 1 0 ]
+{
+"320
+[v lcd_PrintDigitInt32@tempN tempN `l  1 a 4 33 ]
+"322
+[v lcd_PrintDigitInt32@tempC tempC `uc  1 a 1 37 ]
+"307
+[v lcd_PrintDigitInt32@numberChar numberChar `[11]uc  1 a 11 22 ]
+"306
+[v lcd_PrintDigitInt32@numberRevChar numberRevChar `[11]uc  1 a 11 11 ]
+"302
+[v lcd_PrintDigitInt32@i1 i1 `uc  1 a 1 40 ]
+"304
+[v lcd_PrintDigitInt32@totalDigit totalDigit `uc  1 a 1 39 ]
+"303
+[v lcd_PrintDigitInt32@i2 i2 `uc  1 a 1 38 ]
+"301
+[v lcd_PrintDigitInt32@number number `l  1 p 4 0 ]
+[v lcd_PrintDigitInt32@noDigit noDigit `uc  1 p 1 4 ]
+[v lcd_PrintDigitInt32@enSign enSign `a  1 p 1 5 ]
+[v lcd_PrintDigitInt32@enZero enZero `a  1 p 1 6 ]
+"339
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\memset.c
+[v _memset memset `(*.4v  1 e 2 0 ]
+{
+"5
+[v memset@p p `*.4uc  1 a 1 5 ]
+"3
+[v memset@dest dest `*.4v  1 p 1 0 ]
+[v memset@c c `i  1 p 2 1 ]
+[v memset@n n `ui  1 p 2 3 ]
+"10
+} 0
+"261 C:\Microchip\Projects-GitHub\StarterBoardV1\StarterBoardV1-PIC16F1783-PsmcMotorSpeed.X\program.c
+[v _lcd_PrintString lcd_PrintString `(v  1 e 1 0 ]
+{
+[v lcd_PrintString@string string `*.26uc  1 p 2 6 ]
+"266
+} 0
+"254
+[v _lcd_PrintChar lcd_PrintChar `(v  1 e 1 0 ]
+{
+[v lcd_PrintChar@character character `uc  1 p 1 wreg ]
+[v lcd_PrintChar@character character `uc  1 p 1 wreg ]
+[v lcd_PrintChar@character character `uc  1 p 1 5 ]
+"259
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\labs.c
+[v _labs labs `(l  1 e 4 0 ]
+{
+[v labs@a a `l  1 p 4 0 ]
+"4
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 p 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 1 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 p 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 p 1 2 ]
+"51
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 9 ]
+[v ___aldiv@counter counter `uc  1 a 1 8 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"238 C:\Microchip\Projects-GitHub\StarterBoardV1\StarterBoardV1-PIC16F1783-PsmcMotorSpeed.X\program.c
+[v _lcd_Goto lcd_Goto `(v  1 e 1 0 ]
+{
+[v lcd_Goto@y y `uc  1 p 1 wreg ]
+[v lcd_Goto@y y `uc  1 p 1 wreg ]
+[v lcd_Goto@x x `uc  1 p 1 6 ]
+[v lcd_Goto@y y `uc  1 p 1 7 ]
+"252
+} 0
+"20
+[v _programInitialize programInitialize `(v  1 e 1 0 ]
+{
+"69
+} 0
+"341
+[v _motor_Initialize motor_Initialize `(v  1 e 1 0 ]
+{
+"368
+} 0
+"213
+[v _lcd_Initialize lcd_Initialize `(v  1 e 1 0 ]
+{
+"230
+} 0
+"206
+[v _lcd_PrintCmd lcd_PrintCmd `(v  1 e 1 0 ]
+{
+[v lcd_PrintCmd@command command `uc  1 p 1 wreg ]
+[v lcd_PrintCmd@command command `uc  1 p 1 wreg ]
+[v lcd_PrintCmd@command command `uc  1 p 1 5 ]
+"211
+} 0
+"185
+[v _lcd_WriteData lcd_WriteData `(v  1 e 1 0 ]
+{
+[v lcd_WriteData@data data `uc  1 p 1 wreg ]
+[v lcd_WriteData@data data `uc  1 p 1 wreg ]
+"187
+[v lcd_WriteData@data data `uc  1 p 1 4 ]
+"204
+} 0
+"177
+[v _lcd_EPulse lcd_EPulse `(v  1 e 1 0 ]
+{
+"183
+} 0
+"172
+[v _lcd_DelayPulse lcd_DelayPulse `(v  1 e 1 0 ]
+{
+"175
+} 0
+"167
+[v _lcd_DelaySetupTime lcd_DelaySetupTime `(v  1 e 1 0 ]
+{
+"170
+} 0
+"15
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+"16
+[v delay_ms@i i `ul  1 a 4 10 ]
+"15
+[v delay_ms@delay delay `ul  1 p 4 6 ]
+"17
+} 0
+"10
+[v _delay_x24o25us delay_x24o25us `(v  1 e 1 0 ]
+{
+"11
+[v delay_x24o25us@i i `us  1 a 2 4 ]
+"10
+[v delay_x24o25us@delay delay `us  1 p 2 2 ]
+"12
+} 0
+"5
+[v _delay_x1o5us delay_x1o5us `(v  1 e 1 0 ]
+{
+[v delay_x1o5us@delay delay `uc  1 p 1 wreg ]
+"6
+[v delay_x1o5us@i i `uc  1 a 1 1 ]
+"5
+[v delay_x1o5us@delay delay `uc  1 p 1 wreg ]
+[v delay_x1o5us@delay delay `uc  1 p 1 0 ]
+"7
+} 0
